@@ -4,7 +4,9 @@
 [![Spring AI](https://img.shields.io/badge/Spring%20AI-1.0-blue.svg)](https://spring.io/projects/spring-ai)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-A Spring Boot starter project for learning **Agentic AI Workflows**. Features 5 fundamental patterns with interactive examples and working code implementations.
+A Spring Boot starter project for building **Agentic AI Applications**. Features 5 fundamental patterns with interactive examples and working code implementations.
+
+Observability with Micrometer, Prometheus and Grafana.
 
 ## 🚀 Quick Start
 
