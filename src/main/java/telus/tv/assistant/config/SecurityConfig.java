@@ -22,6 +22,7 @@ public class SecurityConfig {
             .authorizeHttpRequests(authorize -> authorize
                 .requestMatchers("/css/**", "/js/**", "/images/**", "/error").permitAll()
                 .requestMatchers("/login").permitAll()
+                .requestMatchers("/actuator/prometheus").permitAll() // Allow Prometheus metrics endpoint
                 .anyRequest().authenticated()
             )
             .formLogin(form -> form
