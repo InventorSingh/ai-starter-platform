@@ -15,6 +15,13 @@ services:
       - 'NEO4J_AUTH=neo4j/notverysecret'
     ports:
       - '7687:7687'
+  redis:
+    image: 'redis:latest'
+    ports:
+      - '6379:6379'
+    command: redis-server --appendonly yes
+    volumes:
+      - redis-data:/data
   prometheus:
     image: prom/prometheus:latest
     volumes:
@@ -33,3 +40,6 @@ services:
     image: 'openzipkin/zipkin:latest'
     ports:
       - '9411:9411'
+
+volumes:
+  redis-data:
